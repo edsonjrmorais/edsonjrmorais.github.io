@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>It is the Edinho´s GitHub Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      font-style: italic;
+      color: #666;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Helm Charts Repository</h1>
+    <p>Below you'll find a list of available Helm charts and instructions on how to use them.</p>
+
+    <h2>Available Helm Charts</h2>
+    <table>
+      <tr>
+        <th>Chart</th>
+        <th>Version</th>
+        <th>Description</th>
+        <th>Download</th>
+      </tr>
+      <tr>
+        <td>flux-app-one-helm-chart-1.0.0</td>
+        <td>1.0.0</td>
+        <td>A description of your Helm chart.</td>
+        <td><a href="https://edsonjrmorais.github.io/helm-charts/flux-app-one-helm-chart-1.0.0.tgz">Download</a></td>
+      </tr>
+    </table>
+
+    <h2>How to Use These Charts</h2>
+    <p>You can add this repository as a Helm repo using the following commands:</p>
+    <pre>
+helm repo add my-charts https://edsonjrmorais/edsonjrmorais.github.io/helm-charts/
+helm install my-release my-charts/my-chart
+    </pre>
+
+    <p>Make sure to replace <code>my-release</code> with the name of your release and <code>my-chart</code> with the actual chart name.</p>
+
+    <div class="note">
+      <p>Note: This site is automatically generated from the Helm chart files hosted in this repository.</p>
+    </div>
+  </div>
+</body>
+</html>
